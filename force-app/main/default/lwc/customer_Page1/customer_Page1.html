@@ -1,15 +1,19 @@
 <template>
     <lightning-tabset active-tab-value={activeTab}>
-    <lightning-tab label="Menu" onactive={handleClick1} value="one">
+    <lightning-tab label="Menu" onactive={handleClick} value="one">
       <lightning-accordion
           active-section-name={section}
           onsectiontoggle={handleSectionToggle}>
-          <lightning-accordion-section name="A" label="Starters">Content A</lightning-accordion-section>
+          <lightning-accordion-section name="A" label="Starters">
+            <lightning-card>
+              <img style="max-height: 200px" alt="Paneer Tikka" src={companyLogo}/>
+          </lightning-card>
+          </lightning-accordion-section>
           <lightning-accordion-section name="B" label="Main Course">Content B</lightning-accordion-section>
           <lightning-accordion-section name="C" label="Dessert">Content C</lightning-accordion-section>
       </lightning-accordion>
     </lightning-tab>
-    <lightning-tab label="Cart" onactive={handleClick1} value="two">
+    <lightning-tab label="Cart" onactive={handleClick} value="two">
       Two Content !
     </lightning-tab>
   </lightning-tabset>
