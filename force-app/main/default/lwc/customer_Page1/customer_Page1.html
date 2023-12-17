@@ -5,9 +5,11 @@
           active-section-name={section}
           onsectiontoggle={handleSectionToggle}>
           <lightning-accordion-section name="A" label="Starters">
-            <lightning-card>
-              <img style="max-height: 200px" alt="Paneer Tikka" src={starters}/>
-          </lightning-card>
+            <!--<lightning-card >-->
+              <div lwc:ref="myDiv"></div>
+              <div lwc:ref="myDiv1" class="starterlabel"></div>
+              <!--<img style="max-height: 200px" alt="Paneer Tikka" src={starters}/>-->
+          <!--</lightning-card>-->
           </lightning-accordion-section>
           <lightning-accordion-section name="B" label="Main Course">Content B</lightning-accordion-section>
           <lightning-accordion-section name="C" label="Dessert">Content C</lightning-accordion-section>

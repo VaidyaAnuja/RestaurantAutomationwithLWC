@@ -6,7 +6,7 @@ public with sharing class Customer_Page {
 
     public static List<StaticImages__mdt> getStarters() {
 
-        return [SELECT Id, ImageName__c, Section__c FROM StaticImages__mdt where Section__c='Starters'];
+        return [SELECT Id, ImageName__c, Section__c, MasterLabel FROM StaticImages__mdt where Section__c='Starters'];
 
     }
 }
